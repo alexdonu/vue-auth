@@ -7,7 +7,7 @@ import router from './router'
 import { initializeApp } from 'firebase/app'
 
 const env = import.meta.env
-
+console.log('1 env', env)
 const firebaseConfig = {
   apiKey: env.VITE_FIREBASE_API_KEY,
   authDomain: env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -18,7 +18,7 @@ const firebaseConfig = {
   measurementId: env.VITE_FIREBASE_MEASUREMENT_ID
 }
 
-console.log(firebaseConfig)
+console.log('2 env', firebaseConfig)
 
 initializeApp(firebaseConfig)
 
